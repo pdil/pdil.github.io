@@ -1,1 +1,82 @@
-Paolo Di Lorenzo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paolo Di Lorenzo</title>
+    <style>
+        body {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+        header {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: inherit; /* Inherit color for better dark mode handling */
+            margin-bottom: 30px;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px; /* Add spacing between icons */
+            justify-content: center;
+            align-items: center;
+        }
+        .social-links img {
+            width: 30px; /* Adjust the size */
+            height: 30px; /* Adjust the size */
+            margin: 0 15px; /* Add horizontal spacing */
+            transition: transform 0.3s ease;
+        }
+        .social-links img:hover {
+            transform: scale(1.1); /* Slight hover effect */
+        }
+        /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212; /* Dark background */
+                color: #f4f4f9; /* Light text */
+            }
+
+            a {
+                color: #BB86FC; /* Adjust link color */
+            }
+
+            a:hover {
+                color: #EFB7FF; /* Adjust hover color */
+            }
+
+            .social-links img {
+                filter: invert(1) brightness(2); /* Makes icons white */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Paolo Di Lorenzo</header>
+    <p>iOS Engineer</p>
+    <div class="social-links">
+        <a href="mailto:paolo@dilorenzo.org">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/gmail.svg" alt="Email">
+        </a>
+        <a href="https://linkedin.com/in/dilorenzopl" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/pdil" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/github.svg" alt="GitHub">
+        </a>
+    </div>
+</body>
+</html>
